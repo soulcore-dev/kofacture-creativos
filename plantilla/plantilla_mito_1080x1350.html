@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+  PLANTILLA DE MARCA KOFACTURE · post 4:5 (1080x1350) · MUSE, 30-sep-2026
+  Uso de respaldo (emergencia): cambia SOLO los 5 textos marcados con ✏️ y exporta a 1080x1350
+  (Playwright: viewport 1080x1350 → screenshot). El logo va junto a este archivo (logo_trim.png).
+  Reglas: el texto se pega LITERAL de la fuente sellada por THEMIS. Paleta fija: marino #0B1B2E,
+  turquesa #3FE0CB, ámbar #FFD48A, blanco. Nada de rojo ni verde. Sin emojis en la pieza.
+  Largo de «Lo exacto»: <120 caracteres → --fs:56px · <220 → 46px · más → 42px.
+  Número tachado (solo si el texto sellado trae una cifra equivocada): usa <s class="tachado">RD$100,000</s>.
+-->
+<html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Inter,sans-serif;color:#fff;background:#0B1B2E;position:relative}
+.bg{position:absolute;inset:0;background:radial-gradient(700px 600px at 92% 6%,rgba(0,180,160,.26),transparent 62%),radial-gradient(900px 800px at 0% 100%,rgba(30,58,95,.9),transparent 70%),linear-gradient(160deg,#0F2744,#0B1B2E 55%,#071322)}
+.wrap{position:absolute;left:84px;right:84px;top:80px;bottom:72px;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;justify-content:space-between}
+.logo{height:80px;filter:brightness(0) invert(1)}
+.kick{font-size:24px;font-weight:800;color:#3FE0CB;letter-spacing:.08em;border:2px solid rgba(63,224,203,.5);border-radius:999px;padding:8px 18px}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;padding:24px 0}
+.lbl{font-size:26px;font-weight:800;letter-spacing:.06em;color:#FFD48A;display:flex;align-items:center;gap:14px}
+.x{width:40px;height:40px;border-radius:50%;background:#FFD48A;color:#0B1B2E;display:grid;place-items:center;font-size:26px;font-weight:900}
+.q{margin-top:18px;font-size:64px;font-weight:900;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.sep{margin:44px 0 36px;height:3px;background:linear-gradient(90deg,#3FE0CB,rgba(63,224,203,0))}
+.exacto{font-size:var(--fs,46px);font-weight:600;line-height:1.32;color:#EAF2F8;text-wrap:pretty}
+.exacto b{color:#3FE0CB;font-weight:900}
+.tachado{color:#B9C8D6;text-decoration:line-through;text-decoration-color:#FFD48A;text-decoration-thickness:6px}
+.cta{display:flex;justify-content:flex-end;margin-bottom:26px}
+.guarda{display:inline-flex;align-items:center;gap:12px;background:#FFD48A;color:#0B1B2E;font-size:30px;font-weight:900;padding:14px 30px 14px 24px;border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.35)}
+.fuente{font-size:22px;color:#B9C8D6;line-height:1.35}
+.aviso{margin-top:10px;font-size:22px;color:#FFD48A;font-weight:600}
+</style></head><body><div class="bg"></div><div class="wrap">
+<div class="top"><img class="logo" src="logo_trim.png" alt="KOFACTURE"><span class="kick">MITOS FISCALES · 0<!-- ✏️ 1: número --></span></div>
+<div class="mid">
+  <div class="lbl"><span class="x">✕</span>Lo que se dice:</div>
+  <div class="q">«Frase del mito, literal.»<!-- ✏️ 2 --></div>
+  <div class="sep"></div>
+  <p class="exacto" style="--fs:46px"><b>Lo exacto:</b> texto literal de «Lo exacto» de la fuente sellada.<!-- ✏️ 3 (y ajusta --fs) --></p>
+</div>
+<div class="cta"><span class="guarda"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z" fill="#0B1B2E"/></svg>Guárdalo</span></div>
+<div class="pie">
+  <div class="fuente">Fuente: norma y artículo, literal.<!-- ✏️ 4 --></div>
+  <div class="aviso">Información general y educativa. Para tu caso, consulta a tu contador.<!-- ✏️ 5: solo si la fuente sellada trae otro aviso --></div>
+</div>
+</div></body></html>
